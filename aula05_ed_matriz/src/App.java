@@ -22,11 +22,36 @@ public class App {
         //Percorrendo uma matriz
         //connsultar elementos
         //Incerir elementos
-        for(int linha=0; linha<matriz.length;linha++){
-            for(int col=0; col<matriz[linha].length; col++){
-                System.out.print(matriz[linha][col]+" ");
-            }
-            System.out.println("");
+        // for(int linha=0; linha<matriz.length;linha++){
+        //     for(int col=0; col<matriz[linha].length; col++){
+        //         System.out.print(matriz[linha][col]+" ");
+        //     }
+        //     System.out.println("");
+        // }
+        int[] idade = new int[2];
+        Aluno[] alunos = new Aluno[3];
+        Aluno a = new Aluno("Kaué", "Ads", 12345);
+        Aluno a1 = new Aluno("João", "Ads", 12346);
+        Aluno a2 = new Aluno("Ana", "Ads", 12347);
+
+        alunos[0] = a;
+        alunos[1] = a1;
+        alunos[2] = a2;
+
+        alunos[0] = new Aluno("Kaué", "Ads", 12345);
+        alunos[1] = new Aluno("João", "Ads", 12346);
+        alunos[2] = new Aluno("Ana", "Ads", 12347);
+
+        //percorrer valores
+        for(int i=0; i<alunos.length;i++){
+            System.out.println(alunos[i].getNome());
+            System.out.println(alunos[i].getRa());
         }
+        // for(int linha=0; linha<matriz.length;linha++){
+        //     for(int col=0; col<matriz[linha].length; col++){
+        //         System.out.print(matriz[linha][col]+" ");
+        //     }
+        //     System.out.println("");
+        // }
     }
 }
